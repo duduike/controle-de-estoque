@@ -1,5 +1,18 @@
+html {
+  font-size: 62.5%;
+}
+
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: beige;
+}
+body form {
+  background-color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
