@@ -2,7 +2,8 @@
 
 
 // Variaveis
-$bg-color: #f3ede3;
+$bg-color:rgb(189, 191, 200);
+$background: radial-gradient(circle, rgba(189, 191, 200, 1) 0%, rgba(239, 238, 236, 1) 52%, rgba(167, 164, 167, 1) 100%);
 $border-color:#00171f;
 
 *,
@@ -13,9 +14,24 @@ $border-color:#00171f;
     margin: 0;
 }
 
-body {
+html {
     font-family: 'Marvel', sans-serif;
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    ul {
+        list-style: none;
+    }
+}
+
+
+body {
+
     background-color: $bg-color;
+    background: radial-gradient(circle, rgba(189, 191, 200, 1) 0%, rgba(239, 238, 236, 1) 52%, rgba(167, 164, 167, 1) 100%);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -27,12 +43,14 @@ body {
         display: flex;
         align-items: center;
         flex-direction: column;
-       
+        background-color: #f6f6f4;
+
 
         .icon-user {
             margin-bottom: 20px;
             width: 200px;
             text-align: center;
+            
         }
 
         form {
@@ -44,7 +62,7 @@ body {
             align-items: center;
             font-weight: bold;
             gap: 10px;
-          
+
         }
     }
 
