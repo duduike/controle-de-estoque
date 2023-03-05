@@ -1,16 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Marvel&display=swap');
+
+:root {
+    --bg-color: #F3EDE3;
+}
+
 html{
     font-size: 62.5%;
 }
 
-*{
+*,
+*::before,
+*::after{
     box-sizing: border-box;
     padding: 0 ;
     margin: 0;
+    font-family: 'Marvel', sans-serif;
 }
 
 body{
- background-color: beige;
+ background-color: var(--bg-color);
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ 
     form{
-        background-color: black;
+        background-color: #fff;
+        width: 460px;
+        height: 373px;
+        
+        fieldset {
+            width: 460px;
+            height: 373px;
+            color: #00171F;
+        }
     }
 }
+
