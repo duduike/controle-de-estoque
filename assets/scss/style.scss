@@ -1,39 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Marvel&display=swap');
 
-:root {
-    --bg-color: #F3EDE3;
-}
 
-html{
-    font-size: 62.5%;
-}
+// Variaveis
+$bg-color: #f3ede3;
+$border-color:#00171f;
 
 *,
 *::before,
-*::after{
+*::after {
     box-sizing: border-box;
-    padding: 0 ;
+    padding: 0;
     margin: 0;
     font-family: 'Marvel', sans-serif;
 }
 
-body{
- background-color: var(--bg-color);
- height: 100vh;
- display: flex;
- justify-content: center;
- align-items: center;
- 
-    form{
-        background-color: #fff;
-        width: 460px;
-        height: 373px;
-        
-        fieldset {
+body {
+    background-color: $bg-color;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .login-area {
+        border: 1px solid $border-color;
+        border-radius: 25px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+       
+
+        .icon-user {
+            margin-bottom: 20px;
+            width: 200px;
+            text-align: center;
+        }
+
+        form {
             width: 460px;
             height: 373px;
-            color: #00171F;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+          
         }
     }
-}
 
+}
