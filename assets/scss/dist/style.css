@@ -9,10 +9,10 @@ html {
 }
 
 body {
-  background-color: beige;
-}
-body form {
-  background-color: black;
+  background: rgb(63, 94, 251);
+  background: radial-gradient(circle, rgb(63, 94, 251) 0%, rgb(155, 82, 251) 65%, rgb(250, 70, 252) 100%);
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=style.css.map */
