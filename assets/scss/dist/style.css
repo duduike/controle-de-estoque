@@ -7,9 +7,20 @@
   margin: 0;
 }
 
-body {
+html {
   font-family: "Marvel", sans-serif;
-  background-color: #f3ede3;
+}
+html a {
+  text-decoration: none;
+  color: black;
+}
+html ul {
+  list-style: none;
+}
+
+body {
+  background-color: #bdbfc8;
+  background: radial-gradient(circle, #bdbfc8 0%, #efeeec 52%, #a7a4a7 100%);
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -21,6 +32,7 @@ body .login-area {
   display: flex;
   align-items: center;
   flex-direction: column;
+  background-color: #f6f6f4;
 }
 body .login-area .icon-user {
   margin-bottom: 20px;
