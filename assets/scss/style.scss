@@ -1,18 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Marvel&display=swap');
 
-@function rem($size) {
-    $value: calc($size / 16) * 1rem;
-    @return $value;
-}
 
-:root {
-    --bg-color: #F3EDE3;
-
-}
-
-html {
-    font-size: 62.5%;
-}
+// Variaveis
+$bg-color: #f3ede3;
+$border-color:#00171f;
 
 *,
 *::before,
@@ -24,21 +15,36 @@ html {
 }
 
 body {
-    background-color: var(--bg-color);
+    background-color: $bg-color;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    form {
-        background-color: #fff;
-        width: 460px;
-        height: 373px;
+    .login-area {
+        border: 1px solid $border-color;
+        border-radius: 25px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+       
 
-        fieldset {
+        .icon-user {
+            margin-bottom: 20px;
+            width: 200px;
+            text-align: center;
+        }
+
+        form {
             width: 460px;
             height: 373px;
-            color: #00171F;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+          
         }
     }
+
 }
