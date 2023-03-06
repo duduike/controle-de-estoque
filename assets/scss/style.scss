@@ -3,6 +3,7 @@
 
 // Variaveis
 $bg-color:rgb(189, 191, 200);
+$login-area: #f6f6f4;
 $background: radial-gradient(circle, rgba(189, 191, 200, 1) 0%, rgba(239, 238, 236, 1) 52%, rgba(167, 164, 167, 1) 100%);
 $border-color:#00171f;
 
@@ -43,26 +44,53 @@ body {
         display: flex;
         align-items: center;
         flex-direction: column;
-        background-color: #f6f6f4;
+        background-color: $login-area;
 
 
         .icon-user {
+            margin-top: 60px;
             margin-bottom: 20px;
             width: 200px;
-            text-align: center;
-            
+            text-align: center;       
         }
 
         form {
             width: 460px;
-            height: 373px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             font-weight: bold;
-            gap: 10px;
+            gap: 5px;
 
+            label:nth-of-type(2) {
+                margin-top: 10px;
+            }    
+
+
+            input {
+                border: 1px solid #00171f;
+                padding: 0px 3px;
+                width: 45%;
+            }
+
+            button {
+                background-color: #001d27;
+                color: #fff;
+                padding: 5px 10px;
+                margin-top: 10px;
+                border-radius: 10px;
+            }
+            
+            button:hover {
+                scale: 1.03;
+            }
+
+            a {
+                p{
+                    margin-bottom: 60px;
+                }
+            }
         }
     }
 

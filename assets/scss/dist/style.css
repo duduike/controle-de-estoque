@@ -35,17 +35,38 @@ body .login-area {
   background-color: #f6f6f4;
 }
 body .login-area .icon-user {
+  margin-top: 60px;
   margin-bottom: 20px;
   width: 200px;
   text-align: center;
 }
 body .login-area form {
   width: 460px;
-  height: 373px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-weight: bold;
-  gap: 10px;
+  gap: 5px;
+}
+body .login-area form label:nth-of-type(2) {
+  margin-top: 10px;
+}
+body .login-area form input {
+  border: 1px solid #00171f;
+  padding: 0px 3px;
+  width: 45%;
+}
+body .login-area form button {
+  background-color: #001d27;
+  color: #fff;
+  padding: 5px 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+body .login-area form button:hover {
+  scale: 1.03;
+}
+body .login-area form a p {
+  margin-bottom: 60px;
 }
