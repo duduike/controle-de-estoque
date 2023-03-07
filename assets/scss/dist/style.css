@@ -70,3 +70,9 @@ body .login-area form button:hover {
 body .login-area form a p {
   margin-bottom: 60px;
 }
+
+@media (max-width: 462px) {
+  .login-area {
+    width: 310px;
+  }
+}
