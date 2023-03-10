@@ -7,6 +7,7 @@ $login-area: #f6f6f4;
 $background: radial-gradient(circle, rgba(189, 191, 200, 1) 0%, rgba(239, 238, 236, 1) 52%, rgba(167, 164, 167, 1) 100%);
 $border-color:#00171f;
 
+
 *,
 *::before,
 *::after {
@@ -45,6 +46,9 @@ body {
         align-items: center;
         flex-direction: column;
         background-color: $login-area;
+        @media (max-width: 520px) {
+            width: 70%;
+        }
 
 
         .icon-user {
@@ -70,8 +74,19 @@ body {
 
             input {
                 border: 1px solid #00171f;
-                padding: 0px 3px;
                 width: 45%;
+                padding: 0px 7px;
+                @media (max-width: 520px) {
+                    padding: 0px 2px;
+                    width: 25%;
+                }
+            }
+
+            input::placeholder{
+                text-align: center;
+                @media (max-width: 520px) {
+                    font-size: 13px;
+                }
             }
 
             button {
