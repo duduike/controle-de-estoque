@@ -34,6 +34,11 @@ body .login-area {
   flex-direction: column;
   background-color: #f6f6f4;
 }
+@media (max-width: 520px) {
+  body .login-area {
+    width: 70%;
+  }
+}
 body .login-area .icon-user {
   margin-top: 60px;
   margin-bottom: 20px;
@@ -54,8 +59,22 @@ body .login-area form label:nth-of-type(2) {
 }
 body .login-area form input {
   border: 1px solid #00171f;
-  padding: 0px 3px;
   width: 45%;
+  padding: 0px 7px;
+}
+@media (max-width: 520px) {
+  body .login-area form input {
+    padding: 0px 2px;
+    width: 25%;
+  }
+}
+body .login-area form input::placeholder {
+  text-align: center;
+}
+@media (max-width: 520px) {
+  body .login-area form input::placeholder {
+    font-size: 13px;
+  }
 }
 body .login-area form button {
   background-color: #001d27;
@@ -69,9 +88,4 @@ body .login-area form button:hover {
 }
 body .login-area form a p {
   margin-bottom: 60px;
-}
-@media (max-width: 462px) {
-  .login-area {
-       width: 310px;
-  }
 }
