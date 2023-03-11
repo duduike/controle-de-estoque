@@ -11,73 +11,87 @@
     <link rel="stylesheet" href="assets/scss/dist/style.css" />
 </head>
 
-<body>
+<body class="index">
     <div class="sidebar">
         <div class="top">
             <div class="logo">
                 <i class="fa-solid fa-kaaba"></i>
                 <span>Nome da Empresa</span>
             </div>
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars" id="btn"></i>
         </div>
         <div class="user">
-            <i class="fa-solid fa-user-tie"></i>
-            <div>
-                <p>User name</p>
+            <img class="user-img" src="assets/img/user.png" alt="User img">
+            <div class="opacity">
+                <p class="bold">User name</p>
                 <p>Admin</p>
             </div>
         </div>
         <ul>
             <li>
-                <i class="fa-solid fa-table-cells-large"></i>
-                <span>
-                    Dashboard
-                </span>
+                <a href="#">
+                    <i class="fa-solid fa-table-cells-large"></i>
+                    <span class="nav-item">Dashboard</span>
+                </a>
+                <span class="toolstip">Dashboard</span>
             </li>
             <li>
-                <i class="fa-solid fa-bag-shopping"></i>
-                <span>
-                    Produtos
-                </span>
+                <a href="#">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="nav-item">Produtos</span>
+                </a>
+                <span class="toolstip">Produtos</span>
             </li>
             <li>
-                <i class="fa-solid fa-store"></i>
-                <span>
-                    Fornecedores
-                </span>
+                <a href="#">
+                    <i class="fa-solid fa-store"></i>
+                    <span class="nav-item">Fornecedores</span>
+                </a>
+                <span class="toolstip _gap">Fornecedores</span>
             </li>
             <li>
-                <i class="fa-solid fa-cart-arrow-down"></i>
-                <span>
-                    Compras
-                </span>
+                <a href="#">
+                    <i class="fa-solid fa-cart-arrow-down"></i>
+                    <span class="nav-item">Compras</span>
+                </a>
+                <span class="toolstip">Compras</span>
             </li>
             <li>
-                <i class="fa-solid fa-hand-holding-dollar"></i>
-                <span>
-                    Vendas
-                </span>
+                <a href="#">
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                    <span class="nav-item">Vendas</span>
+                </a>
+                <span class="toolstip">Vendas</span>
             </li>
             <li>
-                <i class="fa-solid fa-clipboard"></i>
-                <span>
-                    Relatórios
-                </span>
+                <a href="#">
+                    <i class="fa-solid fa-clipboard"></i>
+                    <span class="nav-item">Relatórios</span>
+                </a>
+                <span class="toolstip">Relatórios</span>
             </li>
             <li>
-                <i class="fa-solid fa-gear"></i>
-                <span>
-                    Configurações
-                </span>
+                <a href="#">
+                    <i class="fa-solid fa-gear"></i>
+                    <span class="nav-item">Configurações</span>
+                </a>
+                <span class="toolstip _gap">Configurações</span>
             </li>
             <li>
-                <i class="fa-solid fa-right-from-bracket"></i>
-                <span>
-                    Logout
-                </span>
+                <a href="#">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span class="nav-item">Logout</span>
+                </a>
+                <span class="toolstip">Logout</span>
             </li>
         </ul>
     </div>
+
+    <main class="main-content">
+        <div class="container">
+            <h1>teste</h1>
+        </div>
+    </main>
 
 
     <!-- Font Awesome -->
@@ -91,6 +105,15 @@
         integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
     </script>
     <script src="https://kit.fontawesome.com/149c5506e9.js" crossorigin="anonymous"></script>
+
+    <script>
+        let btn = document.querySelector('#btn');
+        let sbar = document.querySelector('.sidebar');
+        
+        btn.onclick = function () {
+            sbar.classList.toggle('active');
+        };
+    </script>
 </body>
 
 </html>

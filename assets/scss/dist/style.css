@@ -89,3 +89,139 @@ html ul {
 #login-bg .login-area form a p {
   margin-bottom: 60px;
 }
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 100vh;
+  background-color: #00171f;
+  padding: 0.4rem 0.8rem;
+  transition: all 0.5 ease;
+}
+.sidebar ul li {
+  position: relative;
+  height: 50px;
+  width: 90%;
+  margin: 0.8rem auto;
+  line-height: 50px;
+}
+.sidebar ul li .toolstip {
+  position: absolute;
+  left: 125px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.6rem;
+  padding: 0.4rem 1.2rem;
+  line-height: 1.8rem;
+  z-index: 20;
+  opacity: 0;
+}
+.sidebar ul li a {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  border-radius: 0.8rem;
+}
+.sidebar ul li a i {
+  min-width: 50px;
+  text-align: center;
+  height: 50px;
+  border-radius: 12px;
+  line-height: 50px;
+}
+.sidebar ul li a:hover {
+  background-color: #fff;
+  color: #00171f;
+}
+.sidebar #btn {
+  position: absolute;
+  color: #fff;
+  top: 0.4rem;
+  left: 50%;
+  font-size: 1.2rem;
+  line-height: 50px;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+.sidebar .top .logo {
+  color: #fff;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  pointer-events: none;
+  opacity: 0;
+}
+.sidebar .top .logo i {
+  font-size: 2rem;
+  margin-right: 5px;
+}
+.sidebar .user {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+.sidebar .user .user-img {
+  width: 50px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+.sidebar .user .bold {
+  font-weight: 600;
+}
+.sidebar .user p {
+  color: #fff;
+  opacity: 1;
+  margin-left: 1rem;
+  margin-bottom: 0;
+}
+
+.sidebar.active ~ .main-content {
+  left: 250px;
+  width: calc(100% - 250px);
+}
+
+.sidebar.active {
+  width: 250px;
+}
+.sidebar.active #btn {
+  left: 90%;
+}
+.sidebar.active .top .logo {
+  opacity: 1;
+}
+
+.sidebar .opacity, .sidebar .nav-item, .toolstip {
+  opacity: 0;
+}
+
+.sidebar.active .opacity, .sidebar.active .nav-item, .toolstip {
+  opacity: 1;
+}
+
+.sidebar ul li:hover .toolstip {
+  opacity: 1;
+  background-color: #fff;
+}
+
+.sidebar.active ul li .toolstip {
+  display: none;
+}
+
+.main-content {
+  position: relative;
+  background-color: #eee;
+  min-height: 100vh;
+  top: 0;
+  left: 80px;
+  transition: all 0.5 ease;
+  width: calc(100% - 80px);
+  padding: 1rem;
+}
+
+.sidebar ul li .toolstip._gap {
+  left: 142px;
+}
