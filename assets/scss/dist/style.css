@@ -14,6 +14,9 @@ html a {
   text-decoration: none;
   color: black;
 }
+html a:hover {
+  text-decoration: none;
+}
 html ul {
   list-style: none;
 }
@@ -22,8 +25,8 @@ html ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #bdbfc8;
-  background: radial-gradient(circle, #bdbfc8 0%, #efeeec 52%, #a7a4a7 100%);
+  background-color: rgb(189, 191, 200);
+  background: radial-gradient(circle, rgb(189, 191, 200) 0%, rgb(239, 238, 236) 52%, rgb(167, 164, 167) 100%);
   height: 100vh;
 }
 #login-bg .login-area {
@@ -225,3 +228,5 @@ html ul {
 .sidebar ul li .toolstip._gap {
   left: 142px;
 }
+
+/*# sourceMappingURL=style.css.map */
