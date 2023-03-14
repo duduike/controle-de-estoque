@@ -316,14 +316,6 @@ html ul {
   padding: 0.5rem 0 0 0.8rem;
   overflow: hidden;
 }
-.conteudo .side-right .count ._adm ._none {
-  display: none;
-}
-@media (max-width: 396px) {
-  .conteudo .side-right .count ._adm ._adm:nth-child(2) {
-    display: none;
-  }
-}
 .conteudo .new-user {
   background-color: #f6f6f4;
   border: 2px solid #00171f;
