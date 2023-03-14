@@ -220,6 +220,7 @@ html ul {
   left: 0;
   min-height: 100%;
   background-color: #00171f;
+  z-index: -1;
 }
 
 .sidebar.active ~ .main-content {
@@ -295,8 +296,25 @@ html ul {
 }
 .conteudo .side-right .count {
   display: flex;
-  gap: 20px;
+  gap: 10px;
   justify-content: center;
+  margin-bottom: 0.8rem;
+}
+@media (max-width: 557px) {
+  .conteudo .side-right .count {
+    gap: 0;
+  }
+}
+.conteudo .side-right .count ._user {
+  background-color: #1da55f;
+  width: 50%;
+  padding: 0.5rem 0 0 0.8rem;
+}
+.conteudo .side-right .count ._adm {
+  background-color: #f0c34c;
+  width: 50%;
+  padding: 0.5rem 0 0 0.8rem;
+  overflow: hidden;
 }
 .conteudo .new-user {
   background-color: #f6f6f4;
