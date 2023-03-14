@@ -34,6 +34,18 @@ html {
     }
 }
 
+.btn-padrao {
+    background-color: #001d27;
+    color: #fff;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+
+    &:hover {
+    scale: 1.03;
+    }
+}
+
 
 #login-bg {
 
@@ -91,18 +103,6 @@ html {
                 text-align: center;
                 @media (max-width: 520px) {
                     font-size: 13px;
-                }
-            }
-
-            button {
-                background-color: #001d27;
-                color: #fff;
-                padding: 5px 10px;
-                margin-top: 10px;
-                border-radius: 10px;
-
-                &:hover {
-                scale: 1.03;
                 }
             }
 
@@ -271,4 +271,49 @@ html {
 
 .sidebar ul li .toolstip._gap {
     left: 142px;
+}
+
+.conteudo {
+    display: flex;
+    gap: 20px;
+    padding-left: 10%;
+
+    table {
+        width: 90%;
+    }
+    
+    .side-right {
+
+        .count {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+    }
+
+    .new-user {
+        background-color: #f6f6f4;
+        border: 2px solid $border-color;
+        padding: 10px 0 10px 20px;
+
+        form{
+            .form-items {
+                margin-bottom: 1rem;
+            }
+            button {
+                display: block;
+                margin: auto;
+                margin-bottom: 0.5rem;
+            }
+        }
+
+    }
+    .new-user > legend{
+        text-align: center;
+        padding-bottom: .8rem;
+    }
+}
+
+#country {
+    width: 50%;
 }
