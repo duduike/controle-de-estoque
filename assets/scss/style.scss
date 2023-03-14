@@ -34,6 +34,7 @@ html {
     }
 }
 
+
 .btn-padrao {
     background-color: #001d27;
     color: #fff;
@@ -177,10 +178,15 @@ html {
         line-height: 50px;
         transform: translateX(-50%);
         cursor: pointer;
+        @media (max-width: 557px) {
+            display: none;
+        }
     }
 
     .top {
-
+        @media (max-width: 557px) {
+            text-align: center;
+        }
         .logo{
             color: #fff;
             display: flex;
@@ -189,10 +195,25 @@ html {
             align-items: center;
             pointer-events: none;
             opacity: 0;
+            @media (max-width: 557px) {
+                opacity: 1;
+                display: block;
+                padding-top: 10px;
+                margin: 0 auto;
+            }
 
             i {
                 font-size: 2rem;
                 margin-right: 5px;
+                @media (max-width: 557px) {
+                    margin: 0 auto;
+                }
+            }
+
+            span {
+                @media (max-width: 557px) {
+                    opacity: 0;
+                }
             }
         }
     }
@@ -220,6 +241,18 @@ html {
         }
     }
 }
+
+.sidebar::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 821px;
+    transform: translateY(784px);
+    background-color: #00171f;
+}
+
 
 
 .sidebar.active ~ .main-content {
@@ -273,10 +306,24 @@ html {
     left: 142px;
 }
 
+.main-content {
+    @media (max-width: 425px) {
+        h1 {
+            font-size: 2rem;
+        }
+    }
+}
+
 .conteudo {
     display: flex;
     gap: 20px;
     padding-left: 10%;
+    @media (max-width: 992px) {
+        flex-direction: column-reverse;
+    }
+    @media (max-width: 425px) {
+        padding: 0;
+    }
 
     table {
         width: 90%;
@@ -294,7 +341,7 @@ html {
     .new-user {
         background-color: #f6f6f4;
         border: 2px solid $border-color;
-        padding: 10px 0 10px 20px;
+        padding: 10px 20px 10px 20px;
 
         form{
             .form-items {
@@ -314,6 +361,11 @@ html {
     }
 }
 
-#country {
-    width: 50%;
+#country,
+#name, 
+#nascimento,
+#email,
+#password 
+{
+    width: 100%;
 }

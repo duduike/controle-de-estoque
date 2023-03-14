@@ -150,6 +150,16 @@ html ul {
   transform: translateX(-50%);
   cursor: pointer;
 }
+@media (max-width: 557px) {
+  .sidebar #btn {
+    display: none;
+  }
+}
+@media (max-width: 557px) {
+  .sidebar .top {
+    text-align: center;
+  }
+}
 .sidebar .top .logo {
   color: #fff;
   display: flex;
@@ -159,9 +169,27 @@ html ul {
   pointer-events: none;
   opacity: 0;
 }
+@media (max-width: 557px) {
+  .sidebar .top .logo {
+    opacity: 1;
+    display: block;
+    padding-top: 10px;
+    margin: 0 auto;
+  }
+}
 .sidebar .top .logo i {
   font-size: 2rem;
   margin-right: 5px;
+}
+@media (max-width: 557px) {
+  .sidebar .top .logo i {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 557px) {
+  .sidebar .top .logo span {
+    opacity: 0;
+  }
 }
 .sidebar .user {
   display: flex;
@@ -181,6 +209,17 @@ html ul {
   opacity: 1;
   margin-left: 1rem;
   margin-bottom: 0;
+}
+
+.sidebar::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 821px;
+  transform: translateY(784px);
+  background-color: #00171f;
 }
 
 .sidebar.active ~ .main-content {
@@ -230,10 +269,26 @@ html ul {
   left: 142px;
 }
 
+@media (max-width: 425px) {
+  .main-content h1 {
+    font-size: 2rem;
+  }
+}
+
 .conteudo {
   display: flex;
   gap: 20px;
   padding-left: 10%;
+}
+@media (max-width: 992px) {
+  .conteudo {
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 425px) {
+  .conteudo {
+    padding: 0;
+  }
 }
 .conteudo table {
   width: 90%;
@@ -246,7 +301,7 @@ html ul {
 .conteudo .new-user {
   background-color: #f6f6f4;
   border: 2px solid #00171f;
-  padding: 10px 0 10px 20px;
+  padding: 10px 20px 10px 20px;
 }
 .conteudo .new-user form .form-items {
   margin-bottom: 1rem;
@@ -261,6 +316,10 @@ html ul {
   padding-bottom: 0.8rem;
 }
 
-#country {
-  width: 50%;
+#country,
+#name,
+#nascimento,
+#email,
+#password {
+  width: 100%;
 }
