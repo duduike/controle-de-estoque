@@ -94,7 +94,24 @@ html ul {
   margin-bottom: 60px;
 }
 
+.navbar {
+  color: #f6f6f4;
+  background-color: #00171f;
+}
+.navbar .user-header {
+  display: flex;
+  align-items: center;
+}
+.navbar .user-header .user-img-header {
+  width: 2rem;
+}
+.navbar .user-header .user-name p {
+  font-size: 0.8rem;
+  margin: 0;
+}
+
 .sidebar {
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -265,6 +282,12 @@ html ul {
   width: calc(100% - 80px);
   padding: 1rem;
 }
+@media (max-width: 557px) {
+  .main-content {
+    position: inherit;
+    width: 100%;
+  }
+}
 
 .sidebar ul li .toolstip._gap {
   left: 142px;
@@ -286,7 +309,7 @@ html ul {
     flex-direction: column-reverse;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 557px) {
   .conteudo {
     padding: 0;
   }
