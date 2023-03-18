@@ -111,7 +111,6 @@ html ul {
 }
 
 .sidebar {
-  display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -282,7 +281,7 @@ html ul {
   width: calc(100% - 80px);
   padding: 1rem;
 }
-@media (max-width: 557px) {
+@media (max-width: 768px) {
   .main-content {
     position: inherit;
     width: 100%;
@@ -304,13 +303,9 @@ html ul {
   gap: 20px;
   padding-left: 10%;
 }
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .conteudo {
     flex-direction: column-reverse;
-  }
-}
-@media (max-width: 557px) {
-  .conteudo {
     padding: 0;
   }
 }

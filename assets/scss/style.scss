@@ -119,6 +119,7 @@ html {
 
 }
 
+
 .navbar {
     // display: flex;
     color: $font-color;
@@ -146,8 +147,9 @@ html {
     }
 }
 
+
+
 .sidebar{
-    display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -272,6 +274,7 @@ html {
     }
 }
 
+
 .sidebar::before{
     position: fixed;
     content: "";
@@ -331,7 +334,7 @@ html {
     transition: all 0.5 ease;
     width: calc(100% - 80px);
     padding: 1rem;
-    @media (max-width: 557px) {
+    @media (max-width: 768px) {
         position: inherit;
         width: 100%;
     }
@@ -353,10 +356,8 @@ html {
     display: flex;
     gap: 20px;
     padding-left: 10%;
-    @media (max-width: 992px) {
+    @media (max-width: 768px) {
         flex-direction: column-reverse;
-    }
-    @media (max-width: 557px) {
         padding: 0;
     }
 
