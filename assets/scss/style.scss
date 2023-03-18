@@ -7,6 +7,8 @@ $login-area: #f6f6f4;
 $background: radial-gradient(circle, rgba(189, 191, 200, 1) 0%, rgba(239, 238, 236, 1) 52%, rgba(167, 164, 167, 1) 100%);
 $border-color:#00171f;
 $sidebar-color: #00171f;
+$nav-color: #00171f;
+$font-color: #f6f6f4;
 
 
 *,
@@ -116,6 +118,36 @@ html {
     }
 
 }
+
+
+.navbar {
+    // display: flex;
+    color: $font-color;
+    background-color: $nav-color;
+    // align-items: center;
+    // width: 100%;
+    // justify-content: space-between;
+
+    .user-header{
+        display: flex;
+        align-items: center;
+
+        .user-img-header{
+            width: 2rem;
+        }
+
+        .user-name{
+
+
+            p {
+                font-size: .8rem;
+                margin: 0;
+            }
+        }
+    }
+}
+
+
 
 .sidebar{
     position: absolute;
@@ -242,6 +274,7 @@ html {
     }
 }
 
+
 .sidebar::before{
     position: fixed;
     content: "";
@@ -301,6 +334,10 @@ html {
     transition: all 0.5 ease;
     width: calc(100% - 80px);
     padding: 1rem;
+    @media (max-width: 768px) {
+        position: inherit;
+        width: 100%;
+    }
 }
 
 .sidebar ul li .toolstip._gap {
@@ -319,10 +356,8 @@ html {
     display: flex;
     gap: 20px;
     padding-left: 10%;
-    @media (max-width: 992px) {
+    @media (max-width: 768px) {
         flex-direction: column-reverse;
-    }
-    @media (max-width: 425px) {
         padding: 0;
     }
 
