@@ -20,19 +20,17 @@ html a:hover {
 html ul {
   list-style: none;
 }
-
-.btn-padrao {
+html body .btn-padrao {
   background-color: #001d27;
   color: #fff;
   padding: 5px 10px;
   margin-top: 10px;
   border-radius: 10px;
 }
-.btn-padrao:hover {
+html body .btn-padrao:hover {
   scale: 1.03;
 }
-
-#login-bg {
+html body #login-bg {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,7 +38,7 @@ html ul {
   background: radial-gradient(circle, #bdbfc8 0%, #efeeec 52%, #a7a4a7 100%);
   height: 100vh;
 }
-#login-bg .login-area {
+html body #login-bg .login-area {
   border: 1px solid #00171f;
   border-radius: 25px;
   display: flex;
@@ -49,17 +47,17 @@ html ul {
   background-color: #f6f6f4;
 }
 @media (max-width: 520px) {
-  #login-bg .login-area {
+  html body #login-bg .login-area {
     width: 70%;
   }
 }
-#login-bg .login-area .icon-user {
+html body #login-bg .login-area .icon-user {
   margin-top: 60px;
   margin-bottom: 20px;
   width: 200px;
   text-align: center;
 }
-#login-bg .login-area form {
+html body #login-bg .login-area form {
   width: 460px;
   display: flex;
   flex-direction: column;
@@ -68,33 +66,37 @@ html ul {
   font-weight: bold;
   gap: 5px;
 }
-#login-bg .login-area form label:nth-of-type(2) {
+html body #login-bg .login-area form label:nth-of-type(2) {
   margin-top: 10px;
 }
-#login-bg .login-area form input {
+html body #login-bg .login-area form input {
   border: 1px solid #00171f;
   width: 45%;
   padding: 0px 7px;
 }
 @media (max-width: 520px) {
-  #login-bg .login-area form input {
+  html body #login-bg .login-area form input {
     padding: 0px 2px;
     width: 25%;
   }
 }
-#login-bg .login-area form input::placeholder {
+html body #login-bg .login-area form input::placeholder {
   text-align: center;
 }
 @media (max-width: 520px) {
-  #login-bg .login-area form input::placeholder {
+  html body #login-bg .login-area form input::placeholder {
     font-size: 13px;
   }
 }
-#login-bg .login-area form a p {
+html body #login-bg .login-area form a p {
   margin-bottom: 60px;
 }
-
-.sidebar {
+@media (min-width: 980px) {
+  html body .navbar {
+    display: none;
+  }
+}
+html body .sidebar {
   position: absolute;
   top: 0;
   left: 0;
@@ -104,14 +106,14 @@ html ul {
   padding: 0.4rem 0.8rem;
   transition: all 0.5 ease;
 }
-.sidebar ul li {
+html body .sidebar ul li {
   position: relative;
   height: 50px;
   width: 90%;
   margin: 0.8rem auto;
   line-height: 50px;
 }
-.sidebar ul li .toolstip {
+html body .sidebar ul li .toolstip {
   position: absolute;
   left: 125px;
   top: 50%;
@@ -123,24 +125,24 @@ html ul {
   z-index: 20;
   opacity: 0;
 }
-.sidebar ul li a {
+html body .sidebar ul li a {
   color: #fff;
   display: flex;
   align-items: center;
   border-radius: 0.8rem;
 }
-.sidebar ul li a i {
+html body .sidebar ul li a i {
   min-width: 50px;
   text-align: center;
   height: 50px;
   border-radius: 12px;
   line-height: 50px;
 }
-.sidebar ul li a:hover {
+html body .sidebar ul li a:hover {
   background-color: #fff;
   color: #00171f;
 }
-.sidebar #btn {
+html body .sidebar #btn {
   position: absolute;
   color: #fff;
   top: 0.4rem;
@@ -151,16 +153,16 @@ html ul {
   cursor: pointer;
 }
 @media (max-width: 557px) {
-  .sidebar #btn {
+  html body .sidebar #btn {
     display: none;
   }
 }
 @media (max-width: 557px) {
-  .sidebar .top {
+  html body .sidebar .top {
     text-align: center;
   }
 }
-.sidebar .top .logo {
+html body .sidebar .top .logo {
   color: #fff;
   display: flex;
   height: 50px;
@@ -170,48 +172,52 @@ html ul {
   opacity: 0;
 }
 @media (max-width: 557px) {
-  .sidebar .top .logo {
+  html body .sidebar .top .logo {
     opacity: 1;
     display: block;
     padding-top: 10px;
     margin: 0 auto;
   }
 }
-.sidebar .top .logo i {
+html body .sidebar .top .logo i {
   font-size: 2rem;
   margin-right: 5px;
 }
 @media (max-width: 557px) {
-  .sidebar .top .logo i {
+  html body .sidebar .top .logo i {
     margin: 0 auto;
   }
 }
 @media (max-width: 557px) {
-  .sidebar .top .logo span {
+  html body .sidebar .top .logo span {
     opacity: 0;
   }
 }
-.sidebar .user {
+html body .sidebar .user {
   display: flex;
   align-items: center;
   margin: 1rem 0;
 }
-.sidebar .user .user-img {
+html body .sidebar .user .user-img {
   width: 50px;
   border: 1px solid #fff;
   border-radius: 50%;
 }
-.sidebar .user .bold {
+html body .sidebar .user .bold {
   font-weight: 600;
 }
-.sidebar .user p {
+html body .sidebar .user p {
   color: #fff;
   opacity: 1;
   margin-left: 1rem;
   margin-bottom: 0;
 }
-
-.sidebar::before {
+@media (max-width: 980px) {
+  html body .sidebar {
+    display: none;
+  }
+}
+html body .sidebar::before {
   position: fixed;
   content: "";
   display: block;
@@ -222,40 +228,40 @@ html ul {
   background-color: #00171f;
   z-index: -1;
 }
-
-.sidebar.active ~ .main-content {
+html body .sidebar.active ~ .main-content {
   left: 250px;
   width: calc(100% - 250px);
 }
-
-.sidebar.active {
+html body .sidebar.active {
   width: 250px;
 }
-.sidebar.active #btn {
+html body .sidebar.active #btn {
   left: 90%;
 }
-.sidebar.active .top .logo {
+html body .sidebar.active .top .logo {
   opacity: 1;
 }
-
-.sidebar .opacity, .sidebar .nav-item, .toolstip {
+html body .sidebar .opacity,
+html body .sidebar .nav-item,
+html body .toolstip {
   opacity: 0;
 }
-
-.sidebar.active .opacity, .sidebar.active .nav-item, .toolstip {
+html body .sidebar.active .opacity,
+html body .sidebar.active .nav-item,
+html body .toolstip {
   opacity: 1;
 }
-
-.sidebar ul li:hover .toolstip {
+html body .sidebar ul li:hover .toolstip {
   opacity: 1;
   background-color: #fff;
 }
-
-.sidebar.active ul li .toolstip {
+html body .sidebar.active ul li .toolstip {
   display: none;
 }
-
-.main-content {
+html body .sidebar ul li .toolstip._gap {
+  left: 142px;
+}
+html body .main-content {
   position: relative;
   background-color: #eee;
   min-height: 100vh;
@@ -265,79 +271,72 @@ html ul {
   width: calc(100% - 80px);
   padding: 1rem;
 }
-
-.sidebar ul li .toolstip._gap {
-  left: 142px;
+@media (max-width: 980px) {
+  html body .main-content {
+    left: 0;
+    width: 100%;
+  }
 }
-
 @media (max-width: 425px) {
-  .main-content h1 {
+  html body .main-content h1 {
     font-size: 2rem;
   }
 }
-
-.conteudo {
+html body .conteudo {
   display: flex;
   gap: 20px;
-  padding-left: 10%;
 }
-@media (max-width: 992px) {
-  .conteudo {
-    flex-direction: column-reverse;
+@media (max-width: 980px) {
+  html body .conteudo {
+    flex-direction: column;
   }
 }
-@media (max-width: 425px) {
-  .conteudo {
-    padding: 0;
-  }
-}
-.conteudo table {
+html body .conteudo table {
   width: 90%;
 }
-.conteudo .side-right .count {
+html body .conteudo .side-right .count {
   display: flex;
   gap: 10px;
   justify-content: center;
   margin-bottom: 0.8rem;
 }
 @media (max-width: 557px) {
-  .conteudo .side-right .count {
+  html body .conteudo .side-right .count {
     gap: 0;
   }
 }
-.conteudo .side-right .count ._user {
+html body .conteudo .side-right .count ._user {
   background-color: #1da55f;
   width: 50%;
   padding: 0.5rem 0 0 0.8rem;
 }
-.conteudo .side-right .count ._adm {
+html body .conteudo .side-right .count ._adm {
   background-color: #f0c34c;
   width: 50%;
   padding: 0.5rem 0 0 0.8rem;
   overflow: hidden;
 }
-.conteudo .new-user {
+html body .conteudo .new-user {
   background-color: #f6f6f4;
   border: 2px solid #00171f;
   padding: 10px 20px 10px 20px;
 }
-.conteudo .new-user form .form-items {
+html body .conteudo .new-user form .form-items {
   margin-bottom: 1rem;
 }
-.conteudo .new-user form button {
+html body .conteudo .new-user form button {
   display: block;
   margin: auto;
   margin-bottom: 0.5rem;
 }
-.conteudo .new-user > legend {
+html body .conteudo .new-user > legend {
   text-align: center;
   padding-bottom: 0.8rem;
 }
-
-#country,
-#name,
-#nascimento,
-#email,
-#password {
+html body #country,
+html body #name,
+html body #nascimento,
+html body #email,
+html body #password {
   width: 100%;
 }
