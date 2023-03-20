@@ -103,6 +103,21 @@ html body .navbar {
     display: none;
   }
 }
+html body .navbar i, html body .navbar span {
+  color: #f6f6f4;
+}
+html body .navbar span {
+  padding-left: 0.5rem;
+}
+html body .navbar ul li a:hover {
+  padding-left: 0.3rem;
+  padding-right: 0.4rem;
+  border-radius: 0.6rem;
+  background-color: #fff;
+}
+html body .navbar ul li a:hover i, html body .navbar ul li a:hover span {
+  color: #000;
+}
 html body .sidebar {
   position: absolute;
   top: 0;
