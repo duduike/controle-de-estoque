@@ -95,6 +95,25 @@ html {
                 display: none;
 
             }
+            i,span {
+                color: $font-color;
+            }
+            span{
+                padding-left: .5rem;
+            }
+            ul {
+                li {
+                    a:hover{
+                        i,span{
+                            color: #000;
+                        }
+                        padding-left: .3rem;
+                        padding-right: .4rem;
+                        border-radius: .6rem;
+                        background-color: #fff;
+                    }
+                }
+            }
         }
 
         // sidebar
@@ -336,14 +355,7 @@ html {
             table {
                 width: 90%;
 
-                tbody{
-                    tr{
-                        
-                        td{
-                             
-                        } 
-                    }
-                }
+
             }
 
             .side-right {
