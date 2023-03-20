@@ -1,0 +1,39 @@
+@mixin reset {
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+    i::before{
+        font-family: "Font Awesome 6 Free";
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    ul,
+    li {
+        list-style: none;
+    }
+}
+
+@mixin btn-padrao{
+    background-color: #001d27;
+    color: #fff;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+
+    &:hover {
+        scale: 1.03;
+    }
+}
