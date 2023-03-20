@@ -1,53 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Marvel&display=swap');
+@import 'utilities';
+@import 'variables';
 
 
-// Variaveis
-$bg-color:rgb(189, 191, 200);
-$login-area: #f6f6f4;
-$background: radial-gradient(circle, rgba(189, 191, 200, 1) 0%, rgba(239, 238, 236, 1) 52%, rgba(167, 164, 167, 1) 100%);
-$border-color:#00171f;
-$sidebar-color: #00171f;
-$nav-color: #00171f;
-$font-color: #f6f6f4;
-
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
+@include reset;
 
 html {
-    font-family: 'Marvel', sans-serif;
-
-    a {
-        text-decoration: none;
-        color: black;
-    }
-
-    a:hover {
-        text-decoration: none;
-    }
-
-    ul {
-        list-style: none;
-    }
-
     body {
 
         // classe reutilizaveis
         .btn-padrao {
-            background-color: #001d27;
-            color: #fff;
-            padding: 5px 10px;
-            margin-top: 10px;
-            border-radius: 10px;
-
-            &:hover {
-                scale: 1.03;
-            }
+            @include btn-padrao;
         }
 
         // Area Login
@@ -128,7 +90,7 @@ html {
         // navbar mobile
 
         .navbar {
-
+            background-color: $sidebar-color;
             @media (min-width: 980px) {
                 display: none;
 
@@ -205,6 +167,7 @@ html {
             }
 
             .top {
+                margin-bottom: 1.5rem;
                 @media (max-width: 557px) {
                     text-align: center;
                 }
@@ -245,7 +208,7 @@ html {
             .user {
                 display: flex;
                 align-items: center;
-                margin: 1rem 0;
+                margin: 1.5rem 0;
 
                 .user-img {
                     width: 50px;
@@ -336,7 +299,7 @@ html {
 
         .main-content {
             position: relative;
-            background-color: #eee;
+            background-color: $bg-main-content;
             min-height: 100vh;
             top: 0;
             left: 80px;
@@ -356,6 +319,9 @@ html {
             }
         }
 
+        .subtittle{
+            margin: 1rem 0;
+        }
 
         .conteudo {
             display: flex;
